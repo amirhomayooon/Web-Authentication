@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock  %}
+
+{% block content %}
+    <h1>Login</h1>
+    {% if form.errors %}
+        <p>
+            Your username and Password didnt match.
+            please try again.
+        </p>
+    {% else %}
+    <p>
+        use the following form
+        or if you dont have a account yet, you can build it with <a href="{% url 'register' %}">Create Account</a>
+    </p>
+    {% endif %}
+    <p><a href='{% url "password_reset" %}'>Forget Password!</a></p>
+    <form action="{% url 'login' %}" method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ next }}" />
+        <p><input type="submit" value="Log-in"></p>
+    </form>
+        <li class="google">
+            <a href="{% url "social:begin" "google-oauth2" %}">Login with Google</a>
+        </li>
+{% endblock  %}

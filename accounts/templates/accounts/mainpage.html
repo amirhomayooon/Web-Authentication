@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+MainPage
+{% endblock  %}
+
+{% block content %}
+    <h1>MainPage</h1>
+    <p> 
+        Welcome To Your MainPage
+        You Can Edit Your Profile With <a href="{% url 'edit' %}">Edit Profile</a>
+        and change Your Password With <a href="{% url 'password_change' %}">Change Password</a>
+    </p>
+{% endblock  %}

@@ -1,0 +1,6 @@
+cert.crt
+cert.key
+db.sqlite3
+Pipfile
+Pipfile.lock
+.env
