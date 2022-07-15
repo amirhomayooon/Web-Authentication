@@ -1,4 +1,4 @@
-# Web-Authentication
+#🔐 Web-Authentication
 <h1>Web Authentication With Django</h1>
 <p>This is a <span style="color: rgb(184, 49, 47);">Django</span> project to authenticate users, in which the user can first register, for which there are two options, using a <span style="color: rgb(184, 49, 47);">Google account</span> and using personal information such as <span style="color: rgb(184, 49, 47);">email</span>, <span style="color: rgb(184, 49, 47);">username</span>, and <span style="color: rgb(184, 49, 47);">password</span>.</p>
 <p>And after creating an account, they can <span style="color: rgb(184, 49, 47);">edit their information</span> or <span style="color: rgb(184, 49, 47);">request a password change</span>.</p>
